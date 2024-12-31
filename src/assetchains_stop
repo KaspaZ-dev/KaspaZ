@@ -1,0 +1,7 @@
+#!/bin/bash
+set -eo pipefail
+kaspaz_cli='./kaspaz-cli'
+
+./listassetchains | while read chain; do
+  $kaspaz_cli --ac_name=$chain stop
+done

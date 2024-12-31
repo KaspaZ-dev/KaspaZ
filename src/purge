@@ -1,0 +1,5 @@
+rm -rf ~/.kaspaz/$1/chainstate
+rm -rf ~/.kaspaz/$1/database
+rm -rf ~/.kaspaz/$1/blocks
+rm -rf ~/.kaspaz/$1/kaspazstate
+

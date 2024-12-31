@@ -1,0 +1,45 @@
+TESTS += kaspaz-test
+bin_PROGRAMS += kaspaz-test
+
+# tool for generating our public parameters
+kaspaz_test_SOURCES = \
+    test-kaspaz/main.cpp \
+    test-kaspaz/testutils.cpp \
+    test-kaspaz/test_cryptoconditions.cpp \
+    test-kaspaz/test_coinimport.cpp \
+    test-kaspaz/test_eval_bet.cpp \
+    test-kaspaz/test_eval_notarisation.cpp \
+    test-kaspaz/test_parse_notarisation.cpp \
+    test-kaspaz/test_buffered_file.cpp \
+    test-kaspaz/test_sha256_crypto.cpp \
+    test-kaspaz/test_script_standard_tests.cpp \
+    test-kaspaz/test_multisig_tests.cpp \
+    test-kaspaz/test_merkle_tests.cpp \
+    test-kaspaz/test_addrman.cpp \
+    test-kaspaz/test_netbase_tests.cpp \
+    test-kaspaz/test_events.cpp \
+    test-kaspaz/test_hex.cpp \
+    test-kaspaz/test_haraka_removal.cpp \
+    test-kaspaz/test_oldhash_removal.cpp \
+    test-kaspaz/test_kmd_feat.cpp \
+    test-kaspaz/test_legacy_events.cpp \
+    test-kaspaz/test_parse_args.cpp \
+    test-kaspaz/test-gmp-arith.cpp
+
+if TARGET_WINDOWS
+kaspaz_test_SOURCES += test-kaspaz/kaspaz-test-res.rc
+endif
+
+kaspaz_test_CPPFLAGS = $(kaspazd_CPPFLAGS)
+
+kaspaz_test_LDADD = -lgtest $(kaspazd_LDADD)
+
+kaspaz_test_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS) -static
+kaspaz_test_LIBTOOLFLAGS = --tag CXX
+
+yellow := $(shell tput setaf 11)
+reset := $(shell tput sgr0)
+$(info $(yellow)[ Decker ]$(reset) Check the $(yellow)kaspaz_test$(reset) dependencies ...)
+
+$(info $(yellow)$$kaspazd_LDADD$(reset) is [$(kaspazd_LDADD)])
+$(info $(yellow)$$kaspaz_test_LDADD$(reset) is [${kaspaz_test_LDADD}])
