@@ -10,7 +10,8 @@ KaspaZ is a hobby-driven blockchain project created purely for fun, exploration,
 
 LAUNCH DATE 01.01.25
 
-Core Features 
+## Core Features ## 
+
 Blockchain Base: Built on the Komodo platform as an asset chain.
 
 Privacy: Utilizes zk-SNARKs for optional private transactions, offering users flexibility in privacy.
