@@ -2,7 +2,7 @@
 
 ![Downloads](https://img.shields.io/github/downloads/KaspaZ-dev/KaspaZ/total)
 
-![](./share/pixmaps/bitcoin.png)
+![](./share/pixmaps/bitcoin256.png)
 
 ## Overview ##
 
