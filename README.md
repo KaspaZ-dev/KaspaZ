@@ -66,6 +66,10 @@ sudo apt-get install build-essential pkg-config libc6-dev m4 g++-multilib autoco
 Build:
 ```shell
 git clone https://github.com/Kaspa-dev/KaspaZ --branch static --single-branch
+find -type f -iname "*.sh" -exec chmod +x {} \;
+cd depends
+chmod +x config.guess
+chmod +x config.sub
 cd KaspaZ
 ./zcutil/fetch-params.sh
 # -j8 = using 8 threads for the compilation - replace 8 with number of threads you want to use
