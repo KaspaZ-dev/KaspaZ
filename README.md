@@ -6,9 +6,34 @@
 
 ## Overview ##
 
-KomodoOcean, also known as Komodo-QT, is the first native graphical wallet for the Komodo ecosystem, which includes the KMD coin and its assetchains (ACs). Built with the Qt framework, it offers an easy-to-use interface for managing Komodo assets. With KomodoOcean, users can send and receive KMD and interact with assetchains (ACs), view their transaction history, and access various features of the [Komodo Platform](https://kaspazplatform.com/).
+KaspaZ is a hobby-driven blockchain project created purely for fun, exploration, and innovation. Our mission is to blend cutting-edge blockchain technologies like zk-SNARKs with lightning-fast transaction speeds, providing an exciting platform for privacy and experimentation. KaspaZ celebrates the joy of building, learning, and pushing the boundaries of what's possible in the blockchain space—all while keeping things simple and enjoyable for the community. 
 
-While the Komodo assetchains provide advanced privacy features, the main KMD coin does not include these privacy options. KomodoOcean stands out as a pioneering Qt-based wallet for a ZCash fork, especially since ZCash itself still does not have a native Qt wallet.
+LAUNCH DATE 01.01.25
+
+Core Features 
+Blockchain Base: Built on the Komodo platform as an asset chain.
+
+Privacy: Utilizes zk-SNARKs for optional private transactions, offering users flexibility in privacy.
+
+Block Time: 45-second block times, ensuring a balance between speed and security.
+
+Emission Schedule:
+
+Yearly halving cycle.
+
+Monthly decay rate ensures smooth reward adjustments.
+
+Mimics Kaspa’s emission curve, tailored for 45-second blocks.
+
+Maximum Supply: Capped at 28 billion coins, ensuring long-term scarcity.
+
+Mining Algorithm: Uses the Equihash algorithm, promoting ASIC-friendly mining and decentralization.
+
+Transaction Efficiency: Inspired by Kaspa’s DAG-based efficiency while maintaining simplicity on the Komodo platform.
+
+No Premine or Developer Fees: Ensures fairness and true decentralization.
+
+
 
 KaspaZ is available on three OS platforms: `Windows`, `Linux`, and `macOS`.
 
