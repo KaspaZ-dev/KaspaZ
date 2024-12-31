@@ -18,11 +18,7 @@ Privacy: Utilizes zk-SNARKs for optional private transactions, offering users fl
 
 Block Time: 45-second block times, ensuring a balance between speed and security.
 
-Emission Schedule:
-
-Yearly halving cycle.
-
-Monthly decay rate ensures smooth reward adjustments.
+Emission Schedule: Yearly halving cycle with monthly decay rate to ensures smooth reward adjustments.
 
 Mimics Kaspa’s emission curve, tailored for 45-second blocks.
 
